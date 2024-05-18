@@ -1,4 +1,4 @@
 FROM nginx
 COPY html/ /usr/share/nginx/html
 
-RUN date > buildtime.txt
+RUN date > /usr/share/nginx/html/buildtime.txt
